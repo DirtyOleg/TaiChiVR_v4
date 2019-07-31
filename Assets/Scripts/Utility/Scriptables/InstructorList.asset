@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda59cc8f9e408742b3b33a7a8f8921f, type: 3}
+  m_Name: InstructorList
+  m_EditorClassIdentifier: 
+  instructorList:
+  - instructorIndex: 0
+    instructorName: Claudia
+    instructorPreview: {fileID: 21300000, guid: bce53db3ee35e504f966a3371069f6a0,
+      type: 3}
+    instructorPrefab: {fileID: 144178281817050415, guid: 9252401e7b230a24b9428bafd1fcdb14,
+      type: 3}
+  - instructorIndex: 1
+    instructorName: Dennis
+    instructorPreview: {fileID: 21300000, guid: 46d557a28cddbda489e6e1d54fc4e2b0,
+      type: 3}
+    instructorPrefab: {fileID: 1340973440777827202, guid: 80ef2ef2595186d4ca33d7c0dd8ae8ae,
+      type: 3}
+  - instructorIndex: 2
+    instructorName: Saki
+    instructorPreview: {fileID: 21300000, guid: fff33cebd1adae640852aac54f8a8883,
+      type: 3}
+    instructorPrefab: {fileID: 1074897989465740126, guid: f925423e9417d0f4189965663ac88863,
+      type: 3}
+  - instructorIndex: 3
+    instructorName: Shawn
+    instructorPreview: {fileID: 21300000, guid: 78a8a95b5a5920e449e6187b8e9ba5a1,
+      type: 3}
+    instructorPrefab: {fileID: 3522461773390592850, guid: 1d742b4200f7b1b44a8ca172bbe4d0f5,
+      type: 3}
+  animControllerList:
+  - {fileID: 9100000, guid: 1bc638aedb0a04541bd7e52a4e2cb82c, type: 2}
+  - {fileID: 9100000, guid: 91a76afa791769543800a908a9a20a75, type: 2}

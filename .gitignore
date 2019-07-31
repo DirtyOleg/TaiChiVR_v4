@@ -10,6 +10,14 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+/[Aa]ssets/Animations/
+/[Aa]ssets/Animators/
+/[Aa]ssets/Audio Clip/
+/[Aa]ssets/Third-Party_Assets/CurvedUI/
+/[Aa]ssets/Third-Party_Assets/Terrains/
+/[Aa]ssets/Third-Party_Assets/Instructors/
+/[Aa]ssets/Third-Party_Assets/VRTK/
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
@@ -24,6 +32,9 @@
 
 # Visual Studio cache directory
 .vs/
+
+# Visual Studio Code cache directory
+.vscode/
 
 # Gradle cache directory
 .gradle/
