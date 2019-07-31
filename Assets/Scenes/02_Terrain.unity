@@ -367,8 +367,8 @@ GameObject:
   - component: {fileID: 634580883}
   - component: {fileID: 634580882}
   - component: {fileID: 634580881}
-  - component: {fileID: 634580880}
   - component: {fileID: 634580879}
+  - component: {fileID: 634580880}
   m_Layer: 5
   m_Name: TerrainSelection
   m_TagString: Untagged
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 634580878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -2911,8 +2911,8 @@ GameObject:
   - component: {fileID: 3074920691249708419}
   - component: {fileID: 3073814991203291191}
   - component: {fileID: 2893305388045278967}
-  - component: {fileID: 3005622840773745109}
   - component: {fileID: 3005622840773745108}
+  - component: {fileID: 3005622840773745109}
   m_Layer: 5
   m_Name: InteractPanel
   m_TagString: Untagged
@@ -2953,7 +2953,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3005622840773745107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1

@@ -1,0 +1,13 @@
+1. Clone TaiChiVR from github
+
+2. Clone VRTK from "https://github.com/ExtendRealityLtd/VRTK" into Asset/Third-Party_Assets/ (if VRTK folder is already existed, delete the existing one and reimport latest VRTK)
+
+3. copy "Animations" folder to Assets/Animations 
+   copy "Animators" folder to Assets/Animators
+   copy "Audio Clip" folder to Assets/Audio Clip
+   copy "Terrains" folder to Asset/Third-Party_Assets/ 
+   copy "Instructors" folder to Asset/Third-Party_Assets/
+
+   NOTE: I zip all the 5 folders aforementioned into a zip file called ImportMe_v4.zip, you should be able to find it in one of the workstation's desktop
+
+4. Open Unity, download CurvedUI from Asset Store (NOTE: replace CurvedUIRaycaster in the "CurvedUI/Scripts" folder with our mofidied one)

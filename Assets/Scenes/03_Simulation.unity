@@ -5467,8 +5467,8 @@ GameObject:
   - component: {fileID: 778544093}
   - component: {fileID: 778544092}
   - component: {fileID: 778544091}
-  - component: {fileID: 778544090}
   - component: {fileID: 778544089}
+  - component: {fileID: 778544090}
   m_Layer: 5
   m_Name: ParentCanvas
   m_TagString: Untagged
@@ -5532,7 +5532,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 778544087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -12742,8 +12742,8 @@ GameObject:
   - component: {fileID: 1677287781}
   - component: {fileID: 1677287785}
   - component: {fileID: 1677287784}
-  - component: {fileID: 1677287783}
   - component: {fileID: 1677287782}
+  - component: {fileID: 1677287783}
   m_Layer: 0
   m_Name: ParentCanvas
   m_TagString: Untagged
@@ -12806,7 +12806,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1677287780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -16929,8 +16929,8 @@ GameObject:
   - component: {fileID: 2128488980}
   - component: {fileID: 2128488979}
   - component: {fileID: 2128488978}
-  - component: {fileID: 2128488977}
   - component: {fileID: 2128488976}
+  - component: {fileID: 2128488977}
   m_Layer: 5
   m_Name: OppositeTelePanelCanvas
   m_TagString: Untagged
@@ -16991,7 +16991,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128488974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1

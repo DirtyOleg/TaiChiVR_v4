@@ -1,0 +1,5 @@
+Potential:
+-----------------
+
+1. Each terrain will have its own scene, by this way, each terrain will have its own lightmap, to reduce the computation requirement of realtime light calculation in runtime
+2. Optimazing shader

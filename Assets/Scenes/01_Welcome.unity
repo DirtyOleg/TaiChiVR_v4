@@ -217,8 +217,8 @@ GameObject:
   - component: {fileID: 49902646}
   - component: {fileID: 49902645}
   - component: {fileID: 49902644}
-  - component: {fileID: 49902647}
   - component: {fileID: 49902643}
+  - component: {fileID: 49902647}
   m_Layer: 5
   m_Name: WelcomePanel
   m_TagString: Untagged
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 49902642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1

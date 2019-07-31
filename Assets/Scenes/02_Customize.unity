@@ -298,6 +298,8 @@ GameObject:
   - component: {fileID: 153454679}
   - component: {fileID: 153454681}
   - component: {fileID: 153454680}
+  - component: {fileID: 153454683}
+  - component: {fileID: 153454682}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -422,12 +424,12 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 0
+  m_inputSource: 2
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -448,6 +450,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153454678}
   m_CullTransparentMesh: 0
+--- !u!114 &153454682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153454678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b8ec0c25535c409b1f6115963d476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dirty: 0
+--- !u!114 &153454683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153454678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e62188adca544cf1b96ccf1630f15f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoNotTesselate: 0
+  savedPos: {x: 0, y: 0, z: 0}
+  savedUp: {x: 0, y: 0, z: 0}
+  savedRectSize: {x: 0, y: 0}
+  savedColor: {r: 0, g: 0, b: 0, a: 0}
+  savedTextUV0: {x: 0, y: 0}
+  savedFill: 0
 --- !u!1 &256066424
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,8 +4554,8 @@ GameObject:
   - component: {fileID: 2957759571946884795}
   - component: {fileID: 2957759571946884792}
   - component: {fileID: 2957759571946884793}
-  - component: {fileID: 2957759571946884800}
   - component: {fileID: 2957759571946884798}
+  - component: {fileID: 2957759571946884800}
   m_Layer: 5
   m_Name: CustomizePanel
   m_TagString: Untagged
@@ -4538,7 +4572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2957759571946884799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788ec1e93dbf8543863e8e8ea3de81c, type: 3}
+  m_Script: {fileID: 11500000, guid: ba045fa4943b5428da9ef8508c8ada33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
