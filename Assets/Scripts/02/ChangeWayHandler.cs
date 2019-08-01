@@ -16,7 +16,7 @@
         {
             changeBtn.onClick.AddListener(() => ChangeIt());
 
-            if (SharedFlag.Instance.isGaze)
+            if (SharedInfo.Instance.isGaze)
             {
                 text.text = "Controller";
             }
@@ -38,10 +38,10 @@
             VRTKFunc.Instance.Fader.Blink();
             yield return new WaitForSeconds(VRTKFunc.Instance.Fader.AddDuration);
 
-            SharedFlag.Instance.isGaze = !SharedFlag.Instance.isGaze;
-            WayofInterationManager.Instance.ChangeWay(SharedFlag.Instance.isGaze);
+            SharedInfo.Instance.isGaze = !SharedInfo.Instance.isGaze;
+            WayofInterationManager.Instance.ChangeWay(SharedInfo.Instance.isGaze);
 
-            if (SharedFlag.Instance.isGaze)
+            if (SharedInfo.Instance.isGaze)
             {
                 text.text = "Controller";
             }

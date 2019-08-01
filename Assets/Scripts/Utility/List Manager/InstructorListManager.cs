@@ -25,30 +25,6 @@
         private RuntimeAnimatorController[] animControllerList;
         //
 
-        void Awake()
-        {
-            //Singleton 
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(this.gameObject);
-            }
-            else if (Instance != this)
-            {
-                Destroy(this.gameObject);
-            }
-            else
-            {
-                Debug.LogError("InstructorListManager Instance Initialization Failed!!");
-            }
-        }
-
-        void Start()
-        {
-            //Initialization
-            StartCoroutine(Initialization());
-        }
-
         #region Properties
 
         private GameObject[] instructorObjList;
@@ -69,22 +45,15 @@
 
         #endregion
 
-        IEnumerator Initialization()
+        void Awake() 
+        {
+            Instance = this;
+        }
+
+        public IEnumerable Initialization()
         {
             // Instructor GameObject List Initialization
             selectedIndex = 0;
-
-            if (SharedFlag.Instance.isTest)
-            {
-
-            }
-            else
-            {
-                // The following wait is to avoid InstructorList, TerrainList, AudioList are starting initialization in the same frame   
-                yield return null;
-                yield return null;
-            }
-
 
             totalInstructorNum = instructorListScriptable.instructorList.Length;
             instructorObjList = new GameObject[totalInstructorNum];
@@ -100,6 +69,7 @@
                 //     instructorObj.SetActive(false);
                 // }
                 instructorObjList[i] = instructorObj;
+                yield return null;
             }
 
             //
@@ -111,6 +81,7 @@
             for (int i = 0; i < totalControllerNum; i++)
             {
                 animControllerList[i] = instructorListScriptable.animControllerList[i];
+                yield return null;
             }
 
             selectedAnimator = instructorObjList[selectedIndex].GetComponent<Animator>();

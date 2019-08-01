@@ -16,9 +16,9 @@
         {
             VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
             
-            if (SharedFlag.Instance.isTest)
+            if (SharedInfo.Instance.isTest)
             {
-                StartCoroutine(WaitOneSecond());
+                StartCoroutine(TestInit());
             }
             else
             {
@@ -33,9 +33,10 @@
             RemovePointable();
         }
 
-        IEnumerator WaitOneSecond()
+        IEnumerator TestInit()
         {
             yield return new WaitForSeconds(1f);
+            
             InstructorListManager.Instance.CircleInstructors(3);
             InstructorListManager.Instance.EnableAllInstructor();
             AddPointable();

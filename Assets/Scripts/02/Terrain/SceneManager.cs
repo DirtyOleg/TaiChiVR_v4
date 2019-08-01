@@ -12,8 +12,23 @@
 
         void Start()
         {
-            VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
+            if (SharedInfo.Instance.isTest)
+            {
+                StartCoroutine(TestInit());
+            }
+            else
+            {
+                VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
+                TerrainListManager.Instance.EnableSelectedTerrain();
+                AudioListManager.Instance.PlayAudio(TerrainListManager.Instance.selectedIndex);
+            }
+        }
 
+        IEnumerator TestInit()
+        {
+            yield return new WaitForSeconds(1f);
+
+            VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
             TerrainListManager.Instance.EnableSelectedTerrain();
             AudioListManager.Instance.PlayAudio(TerrainListManager.Instance.selectedIndex);
         }

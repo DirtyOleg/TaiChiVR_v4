@@ -19,7 +19,7 @@
 
         void Start()
         {
-            if (SharedFlag.Instance.isTest)
+            if (SharedInfo.Instance.isTest)
             {
                 StartCoroutine(WaitOneSecond());
             }

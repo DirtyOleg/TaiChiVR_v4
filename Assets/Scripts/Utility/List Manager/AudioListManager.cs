@@ -17,44 +17,13 @@
         private int totalClipNum;
         private int currentPlayingIndex = 0; // Index from 0 to (totalClipNum - 1) -> Terrain Audio; Index totalClipNum -> Default Audio
 
-        private void Awake()
+        void Awake() 
         {
-            //Singleton
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else if (Instance != this)
-            {
-                Destroy(gameObject);
-            }
-            else
-            {
-                Debug.LogError("AudioListManager Instance Initialization Failed!!");
-            }
+            Instance = this;
         }
 
-        void Start()
-        {
-            //Initialization
-            StartCoroutine(Initialization());
-        }
-
-        IEnumerator Initialization()
-        {
-            if (SharedFlag.Instance.isTest)
-            {
-
-            }
-            else
-            {
-                // The following wait is to avoid InstructorList, TerrainList, AudioList are starting initialization in the same frame 
-                yield return null;
-                yield return null;
-                yield return null;
-            }
-
+        public IEnumerable Initialization()
+        {       
             audioSource = gameObject.GetComponent<AudioSource>();
 
             totalClipNum = terrainListScriptable.terrainList.Length;
@@ -63,6 +32,7 @@
             for (int i = 0; i < totalClipNum; i++)
             {
                 terrainAudioList[i] = terrainListScriptable.terrainList[i].backgroundMusic;
+                yield return null;
             }
             terrainAudioList[totalClipNum] = audioSource.clip;
         }

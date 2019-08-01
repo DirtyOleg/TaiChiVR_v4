@@ -3,7 +3,6 @@
     using System.Collections;
     using TaiChiVR.Utility;
     using TaiChiVR.Utility.ListManager;
-    using TMPro;
     using UnityEngine;
     using UnityEngine.UI;
 
@@ -15,6 +14,23 @@
 
         void Start()
         {
+            if (SharedInfo.Instance.isTest)
+            {
+                StartCoroutine(TestInit());
+            }
+            else
+            {
+                VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
+                instructorImage.sprite = InstructorListManager.Instance.SelectedInstructorPreview;
+                terrainImage.sprite = TerrainListManager.Instance.SelectedTerrainPreview;
+                AudioListManager.Instance.PlayDefaultAudio();
+            }
+        }
+
+        IEnumerator TestInit()
+        {
+            yield return new WaitForSeconds(1f);
+
             VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
             instructorImage.sprite = InstructorListManager.Instance.SelectedInstructorPreview;
             terrainImage.sprite = TerrainListManager.Instance.SelectedTerrainPreview;

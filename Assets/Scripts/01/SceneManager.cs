@@ -12,6 +12,22 @@
 
         void Start()
         {
+            if (SharedInfo.Instance.isTest)
+            {
+                StartCoroutine(TestInit());
+            }
+            else
+            {
+                VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
+                AudioListManager.Instance.SetVolume(0.5f);
+                AudioListManager.Instance.PlayDefaultAudio();
+            }
+        }
+
+        IEnumerator TestInit()
+        {
+            yield return new WaitForSeconds(1f);
+
             VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
             AudioListManager.Instance.SetVolume(0.5f);
             AudioListManager.Instance.PlayDefaultAudio();

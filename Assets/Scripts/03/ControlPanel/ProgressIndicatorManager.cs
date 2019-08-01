@@ -32,9 +32,9 @@
                 temp = totolTime.ToString(@"mm\:ss");
                 clipStarted = false;
             }
+
             normalizedTime = instructorListManager.GetAnimStateNormalizedTime();
             System.TimeSpan elapsedTime = System.TimeSpan.FromSeconds(totalDuration * normalizedTime);
-
             timerText.text = string.Format("{0} / {1}", elapsedTime.ToString(@"mm\:ss"), temp);
             progressBarImage.fillAmount = normalizedTime;
         }

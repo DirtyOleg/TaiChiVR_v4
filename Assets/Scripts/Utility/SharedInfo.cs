@@ -2,9 +2,9 @@
 {
     using UnityEngine;
 
-    public class SharedFlag : MonoBehaviour
+    public class SharedInfo : MonoBehaviour
     {
-        public static SharedFlag Instance;
+        public static SharedInfo Instance;
 
         public bool isTest = false;
         public bool isGaze = true;
@@ -21,7 +21,6 @@
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(this.gameObject);
             }
             else if (Instance != this)
             {
@@ -29,8 +28,9 @@
             }
             else
             {
-                Debug.LogError("SharedFlag Instance Initialization Failed!!");
+                Debug.LogError("SharedInfo Instance Initialization Failed!!");
             }
         }
+
     }
 }

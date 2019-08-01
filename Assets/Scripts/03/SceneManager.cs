@@ -24,7 +24,7 @@
             teleDestManager.ManualTeleportToThere(FrontTeleDest);
             teleDestManager.DisEnableLocations();
 
-            if (SharedFlag.Instance.isTest)
+            if (SharedInfo.Instance.isTest)
             {
                 StartCoroutine(TestInit());
             }
@@ -66,7 +66,7 @@
 
         IEnumerator TestInit()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
 
             TerrainListManager.Instance.EnableSelectedTerrain();
             AudioListManager.Instance.PlayAudio(TerrainListManager.Instance.selectedIndex);
