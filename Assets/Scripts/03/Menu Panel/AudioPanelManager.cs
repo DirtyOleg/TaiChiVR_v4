@@ -21,7 +21,7 @@
         {
             if (SharedInfo.Instance.isTest)
             {
-                StartCoroutine(WaitOneSecond());
+                StartCoroutine(TestInit());
             }
             else
             {
@@ -33,7 +33,7 @@
             }
         }
 
-        IEnumerator WaitOneSecond()
+        IEnumerator TestInit()
         {
             yield return new WaitForSeconds(1f);
 

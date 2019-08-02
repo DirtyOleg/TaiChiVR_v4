@@ -12742,8 +12742,8 @@ GameObject:
   - component: {fileID: 1677287781}
   - component: {fileID: 1677287785}
   - component: {fileID: 1677287784}
-  - component: {fileID: 1677287782}
   - component: {fileID: 1677287783}
+  - component: {fileID: 1677287782}
   m_Layer: 0
   m_Name: ParentCanvas
   m_TagString: Untagged

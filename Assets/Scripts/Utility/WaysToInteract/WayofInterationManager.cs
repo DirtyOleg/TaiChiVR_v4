@@ -16,19 +16,7 @@
 
         void Awake()
         {
-            //Singleton 
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else if (Instance != this)
-            {
-                Destroy(this.gameObject);
-            }
-            else
-            {
-                Debug.LogError("TerrainListManager Instance Initialization Failed!!");
-            }
+            Instance = this;
         }
 
         void Start()
