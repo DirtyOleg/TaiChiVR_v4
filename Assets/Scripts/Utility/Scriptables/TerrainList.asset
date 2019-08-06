@@ -34,7 +34,7 @@ MonoBehaviour:
   - terrainIndex: 3
     terrainName: Beach
     terrainPreview: {fileID: 21300000, guid: 7ceffe13480b63845976717ef2a8557a, type: 3}
-    terrainPrefab: {fileID: 8229829087031897001, guid: b4382956bba101a4d88430bd63d423c7,
+    terrainPrefab: {fileID: 7746979655673179868, guid: b4382956bba101a4d88430bd63d423c7,
       type: 3}
     backgroundMusic: {fileID: 8300000, guid: 4fe3adc68bebe9344ab90abfa94d856b, type: 3}
   - terrainIndex: 4
