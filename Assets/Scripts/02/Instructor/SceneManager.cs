@@ -15,7 +15,7 @@
         void Start()
         {
             VRTKFunc.Instance.ChangePlayerPosition(initPlayerPosition);
-            
+
             if (SharedInfo.Instance.isTest)
             {
                 StartCoroutine(TestInit());
@@ -28,7 +28,7 @@
             }
         }
 
-        void OnDisable() 
+        void OnDisable()
         {
             RemovePointable();
         }
@@ -36,7 +36,7 @@
         IEnumerator TestInit()
         {
             yield return new WaitForSeconds(1f);
-            
+
             InstructorListManager.Instance.CircleInstructors(3);
             InstructorListManager.Instance.EnableAllInstructor();
             AddPointable();
@@ -59,7 +59,7 @@
             foreach (GameObject instructor in InstructorListManager.Instance.InstructorObjList)
             {
                 InstructorPointable pointable = instructor.GetComponent<InstructorPointable>();
-                instructor.layer = 5; //TODO: 5 is UI layer, need to change to another one 
+                instructor.layer = 10; 
                 Destroy(pointable);
 
                 instructor.GetComponent<OutlineObj>().Outline.SetActive(false);

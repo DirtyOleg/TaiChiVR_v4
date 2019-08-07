@@ -4090,7 +4090,7 @@ GameObject:
   - component: {fileID: 1885367502524619925}
   - component: {fileID: 1885367502524619926}
   m_Layer: 0
-  m_Name: IgnoreUILayer
+  m_Name: IgnorTheseLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4124,7 +4124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 1056
 --- !u!114 &1885367502524619926
 MonoBehaviour:
   m_ObjectHideFlags: 0
