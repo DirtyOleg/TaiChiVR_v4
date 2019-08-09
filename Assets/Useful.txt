@@ -1,0 +1,41 @@
+Fixed Time:
+50Hz (Default) = 0.2
+60Hz (Gear VR) = 0.0167
+72Hz (Quest/Oculus Go) = 0.01388889
+80Hz (Rift S) = 0.125
+90Hz (Rift) = 0.0111
+
+-------------------------------------------------
+
+Mobile VR:
+
+https://developer.oculus.com/blog/tech-note-unity-settings-for-mobile-vr/
+
+-------------------------------------------------
+
+VR UI Design:
+
+https://www.youtube.com/watch?v=braV_c4M8oI
+https://www.youtube.com/watch?v=Sq9NOukgxQc
+https://www.youtube.com/watch?v=ES9jArHRFHQ
+https://www.youtube.com/watch?v=mHt5epanF2c
+https://uxplanet.org/designing-user-experience-for-virtual-reality-vr-applications-fc8e4faadd96
+https://medium.com/startup-grind/4-things-i-learned-designing-user-interfaces-for-vr-cc08cac9e7ec
+https://medium.com/google-design/from-product-design-to-virtual-reality-be46fa793e9b
+https://www.behance.net/gallery/27540991/Samsung-Gear-VR-Design-Concept
+
+----------------------------------------------------
+
+Performance:
+
+https://trello.com/b/Z6cDRyis/good-coding-practices-in-unity
+https://www.youtube.com/watch?v=1e5WY2qf600
+https://www.youtube.com/watch?v=tGmnZdY5Y-E
+https://learn.unity.com/tutorial/optimizing-unity-ui#
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+
+-----------------------------------------------------
+
+https://www.youtube.com/watch?v=h7z4E8Qy8Ks
+https://www.youtube.com/watch?v=NYoqUomgTGU
+https://github.com/ValveSoftware/openvr/blob/master/samples/unity_keyboard_sample/Assets/SteamVR/Scripts/SteamVR_Fade.cs

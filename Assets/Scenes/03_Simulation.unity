@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16917908}
   - component: {fileID: 16917909}
+  - component: {fileID: 16917910}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -253,6 +254,44 @@ MonoBehaviour:
   panelHandler: {fileID: 1971711264}
   teleDestManager: {fileID: 2051645048}
   FrontTeleDest: {fileID: 1003504259008745874}
+--- !u!114 &16917910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16917907}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d491f4b177483f4198fddd1a827530e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 1
+  Started:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Cancelled:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  StillRunning:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  NotRunning:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &24110908
 GameObject:
   m_ObjectHideFlags: 0
@@ -43358,7 +43397,7 @@ PrefabInstance:
     - target: {fileID: 766526339865270793, guid: 57069b7fcaf7aad4fb2de2dc72c2d3e4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7843243908784753470, guid: 57069b7fcaf7aad4fb2de2dc72c2d3e4,
         type: 3}
